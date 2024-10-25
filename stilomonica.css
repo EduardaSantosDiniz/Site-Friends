@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
-  
+
 /* Cabeçalho */
 header {
     background-color: #6b4ead; /* Roxo */
@@ -79,31 +79,30 @@ button:hover {
     background-color: #4e3b8b;
 }
 
-/* Blocos de Texto nas Laterais */
-.blocos-esquerda, .blocos-direita {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
+/* Blocos de Conversa */
+.conversas {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
-.blocos-esquerda {
-    left: 20px;
-}
-
-.blocos-direita {
-    right: 20px;
-}
-
-.bloco {
+.bloco-conversa {
     background-color: #6b4ead;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
     font-weight: bold;
-    width: 200px;
+    width: 45%;
+}
+
+.bloco-conversa.esquerda {
+    align-self: flex-start;
+}
+
+.bloco-conversa.direita {
+    align-self: flex-end;
 }
