@@ -27,7 +27,7 @@ header nav a {
 header nav a:hover {
     color: #ff5a5f; /* Vermelho claro no hover */
 }
-  
+
 /* Container Principal */
 .container {
     display: flex;
@@ -42,7 +42,7 @@ header nav a:hover {
     max-width: 1200px;
     border-bottom: 5px solid #ff5a5f; /* Borda inferior vermelha */
 }
-  
+
 /* Texto no Lado Esquerdo */
 .texto {
     max-width: 40%;
@@ -56,13 +56,13 @@ header nav a:hover {
 .texto p {
     margin-bottom: 20px;
 }
-  
+
 /* Imagem no Lado Direito */
 .imagem img {
     width: 80%;
     border-radius: 8px;
 }
-  
+
 /* Botão */
 button {
     background-color: #5c48a2;
@@ -74,7 +74,36 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-  
+
 button:hover {
     background-color: #4e3b8b;
+}
+
+/* Blocos de Texto nas Laterais */
+.blocos-esquerda, .blocos-direita {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blocos-esquerda {
+    left: 20px;
+}
+
+.blocos-direita {
+    right: 20px;
+}
+
+.bloco {
+    background-color: #6b4ead;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
 }
