@@ -3,28 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elenco de Friends</title>
+  <title>Friends - Personagens</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- Cabeçalho com Menu -->
   <header>
-    <h1>Elenco de Friends</h1>
+    <nav>
+      <a href="#">Personagem 1</a>
+      <a href="#">Personagem 2</a>
+      <a href="#">Personagem 3</a>
+      <a href="#">Personagem 4</a>
+      <a href="#">Personagem 5</a>
+    </nav>
   </header>
 
-  <main class="container">
+  <!-- Container Principal -->
+  <div class="container">
+    <!-- Texto no Lado Esquerdo -->
     <div class="texto">
-      <p>O elenco principal da série Friends é composto por:</p>
-      <ul>
-        <li>Matthew Perry como Chandler Bing</li>
-        <li>Courtney Cox como Monica Geller</li>
-        <li>Lisa Kudrow como Phoebe Buffay</li>
-        <li>Matt LeBlanc como Joey Tribbiani</li>
-        <li>David Schwimmer como Ross Geller</li>
-        <li>Jennifer Aniston como Rachel Green</li>
-      </ul>
+      <h1>Conheça os Personagens de Friends</h1>
+      <p>Explore a personalidade de cada personagem e descubra curiosidades sobre o elenco da série.</p>
+      <button onclick="explorarPersonagens()">Explorar Mais</button>
+      <button onclick="verElenco()">Elenco</button>
     </div>
-  </main>
+
+    <!-- Imagem no Lado Direito -->
+    <div class="imagem">
+      <img src="foto.avif" alt="Elenco de Friends">
+    </div>
+  </div>
+
+  <script>
+    function explorarPersonagens() {
+      window.location.href = "/personagens.html";  // Redireciona para a página dos personagens
+    }
+
+    function verElenco() {
+      window.location.href = "/elenco.html";  // Redireciona para a página do elenco
+    }
+  </script>
 
 </body>
 </html>
